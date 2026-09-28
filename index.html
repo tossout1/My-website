@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arnav | About Me</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* Header */
+
+        header {
+            background: #222;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            color: #ccc;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4da6ff;
+        }
+
+        /* Main */
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        /* Skills */
+
+        .skills span {
+            display: inline-block;
+            background: #222;
+            color: white;
+            padding: 8px 14px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        /* Cards */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* GitHub */
+
+        .github-link {
+            display: inline-block;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .github-link:hover {
+            background: #444;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            main {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>Hi, I'm Arnav</h1>
+        <p>Programmer • Builder • Student</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">GitHub</a>
+    </nav>
+
+    <main>
+
+        <!-- About -->
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hi! I'm Arnav. I enjoy programming,
+                engineering, robotics, electronics,
+                and building projects.
+            </p>
+
+            <p>
+                I especially enjoy combining software
+                and hardware to build systems and
+                understand how technology works.
+            </p>
+        </section>
+
+        <!-- Skills -->
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="skills">
+                <span>Python</span>
+                <span>C</span>
+                <span>C++</span>
+                <span>Arduino</span>
+                <span>Raspberry Pi</span>
+                <span>Git</span>
+            </div>
+        </section>
+
+        <!-- Interests -->
+
+        <section id="interests">
+            <h2>What I Work With</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Software Development</h3>
+
+                    <p>
+                        I build software primarily using
+                        Python, C, and C++ and enjoy
+                        experimenting with different
+                        programming concepts and technologies.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Embedded Systems</h3>
+
+                    <p>
+                        I work with Arduino, Raspberry Pi,
+                        electronics, sensors, and
+                        hardware-software integration.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Robotics & Engineering</h3>
+
+                    <p>
+                        I'm interested in robotics,
+                        control systems, electronics,
+                        and designing systems that interact
+                        with the physical world.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Computer Science</h3>
+
+                    <p>
+                        I'm continuing to expand my knowledge
+                        of algorithms, programming,
+                        computer systems, and problem solving.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="card">
+                <h3>More Coming Soon</h3>
+
+                <p>
+                    I'm currently working on several projects.
+                    I'll add them here as they are completed
+                    and ready to share.
+                </p>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+
+        <section id="achievements">
+            <h2>Achievements & Hackathons</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>🏆 Shady Hacks 2025</h3>
+
+                    <p>
+                        Won Shady Hacks 2025 as a member
+                        of Team QuizTime.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>💻 TLN Hackathon 2026</h3>
+
+                    <p>
+                        Participated in the
+                        TLN 2026 Hackathon.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GitHub -->
+
+        <section id="contact">
+            <h2>Find Me Online</h2>
+
+            <p>
+                Check out my projects and code on GitHub.
+            </p>
+
+            <a
+                class="github-link"
+                href="https://github.com/tossout1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub: @tossout1
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 Arnav</p>
+    </footer>
+
+</body>
+</html>
